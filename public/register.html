@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DSA Problem Tracker</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+    <header class="py-16">
+        <a href="./index.html">
+            <h1 id="a1" class="text-3xl font-bold">DSA Problem List</h1>
+        </a>
+    </header>
+    <h2 class="text-2xl font-bold pt-16">Registration</h2>
+    <form action="/register" method="POST" class="flex flex-col items-center mt-8">
+        <div class="input-box my-1 py-4" id="a1">
+            <input type="text" name="username" required placeholder="User Name">
+            <!-- <label class="text-gray-600">User Name</label> -->
+        </div>
+        <div class="input-box my-1 py-4" id="a1">
+            <input type="email" name="email" required placeholder="Email">
+            <!-- <label class="text-gray-600">Email</label> -->
+        </div>
+        <div class="input-box my-1 py-4" id="a1">
+            <input type="password" name="password" required placeholder="Password">
+            <!-- <label class="text-gray-600">Password</label> -->
+        </div>
+        <div class="pt-4"><button type="submit" class="btn">Register</button></div>
+        <div>
+            <p>Already have an account? <a href="./login.html" class="login-link">Login</a></p>
+        </div>
+    </form>
+</body>
+</html>

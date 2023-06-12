@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DSA Problem Tracker</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="a1">DSA Problem Tracker</h1>
+        <div class="auth-buttons">
+            <button id="loginButton" class="auth-button">Login</button>
+            <button id="registerButton" class="auth-button">Register</button>
+        </div>
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Enter keyword">
+            <input type="date" id="searchDate">
+            <select id="searchStatus">
+                <option value="">All</option>
+                <option value="solved">Solved</option>
+                <option value="attempted">Attempted</option>
+                <option value="todo">To-Do</option>
+            </select>            
+            <button type="submit" class="bt">Search</button>
+            <button id="clearButton" type="button" class="bt">Clear Filter</button>
+        </form>
+    </header>
+    <div class="container-display" id="container-display">
+        <button><div id="inst">INSTRUCTIONS</div></button>
+    </div>
+    <p class="sh">click above to see instructions!</p>
+    <div class="container" id="instructions">
+        <!-- <h1 id="inst">INSTRUCTIONS:</h1> -->
+        <ol>
+            <li>User Registration: Function to allow users to register with a unique username and password.</li>
+            <li>User Login: Function to authenticate registered users and grant access to problem-solving features.</li>
+            <li>Problem Search:
+                <ul>
+                    <li>Implement a search functionality that allows users to search for problems based on different criteria such as keywords, status, or date of submission.</li>
+                    <li>Provide a search bar where users can enter keywords related to the problem they are looking for.</li>
+                    <li>Include filters to refine search results by problem status (solved, unsolved, in progress) or by date (newest, oldest).</li>
+                    <li>Display the search results in a clear and organized manner, showing relevant information such as problem title, description, and status.</li>
+                </ul>
+            </li>
+            <li>Problem Submission: Function to allow users to submit new problems with details such as title, description, input/output format, constraints, and example test cases.</li>
+            <li>Problem Status Update: Function to allow users to change the status of a problem (solved, unsolved, in progress).</li>
+        </ol>
+    </div>
+    <hr class="ln">
+    <h1>Problem List</h1>
+    <main>
+        <div class="status-counts">
+            <span id="solvedCount">Solved: 0</span>
+            <span id="attemptedCount">Attempted: 0</span>
+            <span id="todoCount">To-Do: 0</span>
+            <span id="totalProblems">Total Problems: 0</span>
+        </div>
+        <form id="problemForm">
+            <input type="text" id="problemInput" placeholder="Enter problem">
+            <input type="text" id="problemLinkInput" placeholder="Enter problem link">
+            <select id="problemStatusSelect">
+                <option value="solved">Solved</option>
+                <option value="attempted">Attempted</option>
+                <option value="todo">To-Do</option>
+            </select>
+            <button type="submit">Add Problem</button>
+        </form>
+        <table id="problemList">
+            <thead>
+                <tr>
+                    <th>Problem Number</th>
+                    <th>Problem Name</th>
+                    <th>Status</th>
+                    <th>Problem Link</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

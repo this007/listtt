@@ -1,0 +1,290 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+main{
+    padding: 20px;
+    margin: 40px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.date-header {
+    font-weight: bold;
+    color: #999;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.auth-buttons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.auth-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.auth-button:hover {
+    background-color: #45a049;
+}
+
+#a1 {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+h2 {
+    margin: 0;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 1px;
+}
+
+.input-box input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-box input:focus {
+    border-color: #4CAF50;
+}
+
+.input-box input:focus + label {
+    color: #4CAF50;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.login-register p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-link {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+.login-link {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+.container {
+    display: none;
+    width: 400px;
+    margin: 20px auto;
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #82c886;
+    font-family: Arial, sans-serif;
+}
+
+/* Dots container styles */
+.container-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 40px;
+    height: 0px;
+    cursor: pointer;
+}
+
+.dots {
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 2px 0;
+}
+
+ol {
+    margin-left: 8px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+.ln{
+    margin-top: 45px;
+}
+.sh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 30px;
+    color: #776565d7;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: #45a049;
+}
+.totalP{
+    margin: 20px;
+}
+.bt{
+    border: solid;
+    border-color: rgb(180, 221, 140);
+}
+.status-counts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.status-counts span {
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+#solvedCount {
+    background-color: #82c485;
+    color: #ffffff;
+}
+
+#attemptedCount {
+    background-color: #f7b267;
+    color: #ffffff;
+}
+
+#todoCount {
+    background-color: #f98461;
+    color: #ffffff;
+}
+
+#totalProblems {
+    background-color: #5e9fbf;
+    color: #ffffff;
+}
